@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Keyboard Bootstrap</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <!--Шапка Сайта-->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <!--data-toggle используется для закрытия раскрывающихся меню на уровне приложения; .collapse скрывает содержимое, переключайте видимость контента -->
+          <!--data-target указывает что именно будет открываться(блок с классом navbar collapse)-->
+				  <span class="icon-bar"></span> <!--три чёрточки возле кнопки (когда сжимается окно)-->
+			   <span class="icon-bar"></span>
+			   <span class="icon-bar"></span>
+				</button>
+                <a class="navbar-brand" href="#"><i class="fa fa-key"></i>B<i class="fa fa-circle"></i>ARD</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="#">Домой</a></li>
+                    <li><a href="#">Про нас</a></li>
+                    <li><a href="#">Сервисы</a></li>
+                    <li><a href="#">Работы</a></li>
+                    <li><a href="https://mail.google.com/mail/u/0/#inbox" target="_blank"><i class="fa fa-envelope-o"></i></a></li>
+                    <!--aria-hidden="true" говорит о том, что элемент не должен быть видим-->
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--Заголовок сайта-->
+    <div id="headerwrap">
+        <div class="container">
+            <div class="row centered">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <!--COL-LG - Система сеток (lg-large(Максимальная ширина контейнера 960px); offset-класс для смещения колонки(2-по центру))-->
+                    <h1>Этот сайт сделан с помощью Bootstrap</h1>
+                    <h2>Создаём сайты и украшаем их!</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Информационный контейнер-->
+    <div class="container w">
+        <div class="row centered">
+            <br><br>
+            <div class="col-lg-4">
+                <i class="fa fa-heart"></i>
+                <h4>Дизайн</h4>
+                <p>UI и UX часто путают, поэтому разнице между этими понятиями стоит уделить внимание. Если объяснять одним словом, то UI — это красиво, а UX — это удобно. </p>
+            </div>
+            <div class="col-lg-4">
+                <i class="fa fa-laptop"></i>
+                <h4>Компьютер</h4>
+                <p>Каждая работа наших UI/UX дизайнеров проверяется и сдаётся в назначенные сроки на ПК.</p>
+            </div>
+            <div class="col-lg-4">
+                <i class="fa fa-trophy"></i>
+                <h4>Помощь</h4>
+                <p>От удобства и простоты сервиса для доставки еды или сайта маркетплейса зависит, вернёмся ли мы снова за покупками. Поэтому наши UI/UX дизайнеры помогут создать доступность, логику и красоту сайта.</p>
+            </div>
+        </div>
+        <br><br>
+    </div>
+
+    <!--Портфолио-->
+    <div id="dg">
+        <div class="container">
+            <div class="row centered">
+                <h4>Последние работы</h4>
+                <br>
+                <div class="col-lg-4">
+                    <div class="tilt-effect">
+                        <a href="#"><img src="img/screenshot_80-transformed.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="tilt-effect">
+                        <a href="#"><img src="img/screenshot_86-transformed.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="tilt-effect">
+                        <a href="#"><img src="img/screenshot_87-transformed.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Примеры сайтов-->
+    <div class="container wb">
+        <div class="row centered">
+            <br><br>
+            <div class="col-lg-8 col-lg-offset-2">
+                <h4>Создание сайтов</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                <p><br><br></p>
+            </div>
+
+            <!--Слайдер на страенице-->
+            <div class="col-lg-2"></div>
+            <div class="col-lg-10 col-lg-offset-1">
+                <div id="myCarousel" class="carousel slide">
+                    <!--data-ride="carousel" (для автоматического переключения карусели)-->
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <!--Data-slide-to - указатель на порядковый номер слайда, соответствующего определенному индикатору -->
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="img/Dubai.jpg">
+                            <div class="carousel-caption">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="img/Tak7.jpg">
+                            <div class="carousel-caption">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="img/3899060.jpg">
+                            <div class="carousel-caption">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="lg">
+        <div class="container">
+            <div class="row centered">
+                <h4>Наши дорогие партнёры</h4>
+                <div class="col-lg-2 col-lg-offset-1">
+                    <img src="img/c01.gif" alt="">
+                </div>
+                <div class="col-lg-2">
+                    <img src="img/c02.gif" alt="">
+                </div>
+                <div class="col-lg-2">
+                    <img src="img/c03.gif" alt="">
+                </div>
+                <div class="col-lg-2">
+                    <img src="img/c04.gif" alt="">
+                </div>
+                <div class="col-lg-2">
+                    <img src="img/c05.gif" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--<div id="r">
+    <div class="container">
+      <div class="row centered">
+        <div class="col-lg-8 col-lg-offset-2">
+          <h4>Здесь могла бы быть Ваша реклама</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et</p>
+        </div>
+      </div>
+    </div>
+  </div>-->
+
+    <!--Футер Сайта-->
+    <footer>
+        <div class="footer-content">
+            <h3><i class="fa fa-key"></i>B<i class="fa fa-circle"></i>ARD</h3>
+            <p>Хороший дизайн виден сразу. Отличный дизайн незаметен</p>
+            <ul class="socials">
+                <li><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i>
+            <li><a href="https://vk.com/id299654718" target="_blank"><i class="fa fa-vk"></i>
+            <li><a href="https://www.youtube.com/channel/UCMmQSKcEvuhb9RUJ2FHjh9Q" target="_blank"><i class="fa fa-youtube"></i>
+            <li><a href="https://www.instagram.com/krikliukartiom/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+        </div>
+        <a name="BottomPage"></a>
+        <div class="footer-bottom">
+            <p>copyright &copy;2022 <i class="fa fa-key"></i>B<i class="fa fa-circle"></i>ARD. designed by <span>FatherFrost</span></p>
+        </div>
+    </footer>
+
+    <!--<div id="f">
+    <div class="container">
+      <div class="row centered">
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-vk"></i></a>
+      </div>
+    </div>
+  </div>-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
